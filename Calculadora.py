@@ -1,27 +1,17 @@
-# ---------------------------------------------------------
-# Archivo base: calculadora.py
-# Autor: Ian Bonilla Mena
-# Rol: Líder / Aprobador
-# Descripción:
-#   Este archivo contiene la estructura base del programa.
-#   Será modificado por los desarrolladores (Dev1 y Dev2)
-#   durante el flujo de trabajo colaborativo en GitHub.
-# ---------------------------------------------------------
+# calculadora.py
 
-def calcular_precio(precio):
+def aplicar_reglas_compra(precio):
     """
-    Calcula el precio final de un producto.
-    Actualmente solo retorna el precio original.
-    Dev1 y Dev2 deberán modificar esta función.
+    Aplica todas las reglas de negocio al precio de compra.
     """
+    
+    # Ambos desarrolladores DEBEN MODIFICAR la línea inmediatamente debajo de este comentario.
+    precio = precio
+    
     return precio
 
-
-if __name__ == "__main__":
-    print("=== Calculadora de Precio Final ===")
-    try:
-        valor = float(input("Ingrese el precio del producto: "))
-        total = calcular_precio(valor)
-        print(f"El precio final es: {total}")
-    except ValueError:
-        print("Error: Debe ingresar un número válido.")
+# Inicia la ejecución de prueba
+if __name__ == '__main__':
+    precio_inicial = 100
+    precio_final = aplicar_reglas_compra(precio_inicial)
+    print(f"Precio inicial: {precio_inicial}. Precio final: {precio_final}")
