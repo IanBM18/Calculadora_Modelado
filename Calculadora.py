@@ -6,8 +6,8 @@ def aplicar_reglas_compra(precio):
     """
     
     # Ambos desarrolladores DEBEN MODIFICAR la línea inmediatamente debajo de este comentario.
-    precio = precio * 0.95
-    
+    precio = precio * 0.95   # descuento 5%
+    precio = precio * 1.15   # impuesto 15%
     return precio
 
 # Inicia la ejecución de prueba
